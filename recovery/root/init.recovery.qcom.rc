@@ -39,16 +39,16 @@ on init
 on boot
   
     # load touch modules
-    # insmod /vendor/lib/modules/5.4.254-qgki/sec_tsp_log.ko
-    # insmod /vendor/lib/modules/5.4.254-qgki/sec_tclm_v2.ko
-    # insmod /vendor/lib/modules/5.4.254-qgki/sec_secure_touch.ko
-    # insmod /vendor/lib/modules/5.4.254-qgki/sec_common_fn.ko
-    # insmod /vendor/lib/modules/5.4.254-qgki/sec_tsp_dumpkey.ko
-    # insmod /vendor/lib/modules/5.4.254-qgki/sec_cmd.ko
-    # insmod /vendor/lib/modules/5.4.254-qgki/sec_virtual_tsp.ko
-    # insmod /vendor/lib/modules/5.4.254-qgki/stm_ts_spi.ko
+    insmod /vendor/lib/modules/5.4.254-qgki/sec_tsp_log.ko
+    insmod /vendor/lib/modules/5.4.254-qgki/sec_tclm_v2.ko
+    insmod /vendor/lib/modules/5.4.254-qgki/sec_secure_touch.ko
+    insmod /vendor/lib/modules/5.4.254-qgki/sec_common_fn.ko
+    insmod /vendor/lib/modules/5.4.254-qgki/sec_tsp_dumpkey.ko
+    insmod /vendor/lib/modules/5.4.254-qgki/sec_cmd.ko
+    insmod /vendor/lib/modules/5.4.254-qgki/sec_virtual_tsp.ko
+    insmod /vendor/lib/modules/5.4.254-qgki/stm_ts_spi.ko
     # Outer TouschScreen
-    # insmod /vendor/lib/modules/5.4.254-qgki/stm_ts.ko
+    insmod /vendor/lib/modules/5.4.254-qgki/stm_ts.ko
 
 on property:ro.boot.usbcontroller=*
     setprop sys.usb.controller ${ro.boot.usbcontroller}
